@@ -13,6 +13,9 @@ jobs:
       - name: Check softwares installed
         run: |
              java --version
-             jenkins --version
              mvn --version
              git --version
+      - name: install Jenkins
+        run: |
+             sudo apt-get install jenkins -y
+             sudo jenkins --version
